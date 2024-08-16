@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
   <title>POINT-MEDICAL</title>
   <link rel="icon" type="image/x-icon" href="assets/img/Point_Medical_Logo.png">
   <meta name="author" content="Velile Vamba">
   <meta content="" name="lorem100">
   <meta content="" name="keywords">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Favicons -->
-  
-
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
@@ -34,696 +29,821 @@
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
   <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-	<style type="text/css">
-		.carousel-item {
-		  height: 60vh;
-		  min-height: 350px;
-		  background: no-repeat center center scroll;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		}
-
-    .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.main .wrap {
-  margin: 2rem;
-
-  transform-style: preserve-3d;
-  transform: perspective(100rem);
-
-  cursor: pointer;
-}
-
-.main .container {
-  --rX: 0;
-  --rY: 0;
-  --bX: 50%;
-  --bY: 80%;
-
- 
-  border: 1px solid var(--background-color);
-  border-radius: 1.6rem;
-  padding: 4rem;
-
-  display: flex;
-  align-items: flex-end;
-
-  position: relative;
-  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-
-  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(32, 57, 84));
-  background-position: var(--bX) var(--bY);
-  background-size: 40rem auto;
-  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
-
-  transition: transform .6s 1s;
-}
-
-.main .container::before,
-.main .container::after {
-  content: "";
-
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #fff;
-
-  position: absolute;
-  z-index: 2;
-
-  opacity: .6;
-  transition: .3s;
-}
-
-.main .container::before {
-  top: 2rem;
-  right: 2rem;
-
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
-
-.main .container::after {
-  bottom: 2rem;
-  left: 2rem;
-
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.main .container--active {
-  transition: none;
-}
-
-.main .container--2 {
-  filter: hue-rotate(80deg) saturate(140%);
-}
-
-.main .container--3 {
-  filter: hue-rotate(160deg) saturate(140%);
-}
-
-.main .container p {
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 0.8rem;
-  text-align: left;
-}
-
-.main .wrap:hover .container::before,
-.main .wrap:hover .container::after {
-  width: calc(100% - 4rem);
-  height: calc(100% - 4rem);
-}
-
-.main .abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 0%);
-  font-size: 1.6rem;
-} 
-
-/*****************************************/
-.solutions {
-  /* The image used */
-  background-image: url(assets/img/Our\ company\ 1.webp);
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.solutions .wrapper{
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-}
-
-.solutions h1{
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 48px;
-}
-
-.solutions .panels{
-  list-style-type: none;
-  padding: 0;
-}
-
-.solutions .panels li{
-
-  margin: 0;
-  display: block;
-  box-sizing: border-box;
-  float: left;
-}
-
-.solutions .panels li div{
-  padding: 10% 0;
-  text-align: center;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  height: 50vh;
-}
-
-/*// ANIMATION STYLES //*/
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-.solutions .panels div.back {
-  transform: rotateY(90deg);
-}
-
-.solutions .panels div.front {
-  position: absolute;
-}
-
-.solutions .panels li:hover div.front {
-  animation: twirl 0.2s ease-in forwards;
-}
-.solutions .panels li:hover div.back {
-  animation: twirl 0.2s 0.2s ease-out forwards reverse;
-}
-
-@keyframes twirl {
-  0%{ transform: rotateY(0deg)}
-  100% {transform: rotateY(90deg)}
-}
-
-.why-us {
-  /* The image used */
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  background-image: url(assets/img/Our\ company\ 1.webp);
-
-  /* Set a specific height */
-  min-height: 350px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-	</style>
-</head>
-
-<body>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <header id="header" class="fixed-top">
-    <div class="container">
-
-      <div class="logo float-left">
-        
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="assets/img/Point_Medical_Logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Our Work</a></li>
-          <li><a href="#faq">Case Studies</a></li>
-          <li><a href="#team">Solutions</a></li>
-		      <li><a href="#contact">Contact Us</a></li>
-        </ul>
-            
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End #header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section >
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(assets/img/Realclinic.webp)">
-          <div class="carousel-caption">
-            <h2 class="display-4" ></h2>
-            <p class="lead"style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;" >POINT leads in personalized prosthetics and orthotics in the GCC region, enhancing rehabilitation outcomes through innovative, tailored solutions. We empower healthcare providers and transform patient care with cutting-edge technology and personalized support.</p>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/slider-2.jpg)">
-          <div class="carousel-caption ">
-            <h2 class="display-4">Point-Medical</h2>
-            <p class="lead">Delivering Prosthetics, Orthotics, and Cutting-Edge Technologies to the Market</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/exersice.jpg)">
-          <div class="carousel-caption covid-block">
-            <h2 class="display-4">We are in this together.</h2>
-            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px;">POINT is committed to adhering to the standards set by the WHO for prosthetics and orthotics. Our company strictly follows these guidelines, ensuring the highest quality in our products and services. We prioritize the well-being of our patients and partners by maintaining compliance with international health standards, fostering safe and effective rehabilitation solutions.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-    </div>
-  </section><!-- #hero -->
   
+  <style type="text/css">
+    /* Responsive carousel height */
+    .carousel-item {
+      height: 60vh;
+      min-height: 350px;
+      background: no-repeat center center scroll;
+      background-size: cover;
+    }
 
-  <main id="main">
+    /* Main section flex styling */
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+    /* Responsive container for mobile devices */
+    .main .container {
+      --rX: 0;
+      --rY: 0;
+      --bX: 50%;
+      --bY: 80%;
+      border: 1px solid var(--background-color);
+      border-radius: 1.6rem;
+      padding: 4rem;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+      background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(32, 57, 84));
+      background-position: var(--bX) var(--bY);
+      background-size: 40rem auto;
+      box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
+      transition: transform .6s 1s;
+    }
 
-        <div class="section-title">
-          <h3>About Us</h3
-          >
-        </div>
+    /* Adjust container padding and margins for smaller screens */
+    @media (max-width: 767px) {
+      .main .container {
+        padding: 2rem;
+        margin: 1rem;
+      }
 
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/Point_Medical_Logo.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h3>What we do</h3>
-            <p class="">
-                POINT specializes in prosthetics and orthotics solutions, helping healthcare providers enhance patient care and drive innovation through advanced technology and personalized support.
-            </p>
-            <p>
-                POINT focuses on delivering innovative, personalized prosthetics and orthotics solutions across the GCC region. Our services provide healthcare providers, rehabilitation centers, and patients with advanced, customized options that enhance care and outcomes, all while maintaining cost-efficiency.
-            </p>
-            <p>
-                At POINT, our goal is not to be the largest provider in the prosthetics and orthotics field, but to be the best in delivering personalized, high-quality solutions tailored to the specific needs of our clients.
-            </p>
-          </div>
-        </div>
+      .main .wrap {
+        margin: 1rem;
+      }
 
-      </div>
-    </section><!-- End About Us Section -->
+      .carousel-item {
+        height: 50vh;
+      }
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container">
+      .solutions h1 {
+        font-size: 36px;
+      }
+    }
 
-        <div class="section-title">
-          <h2>Our Work</h2>
-          <p>POINT focuses on providing advanced prosthetics and orthotics solutions to healthcare providers. Our aim is to enhance patient outcomes while streamlining the process for healthcare professionals. We are dedicated to delivering high-quality, personalized solutions that improve efficiency and effectiveness in patient care.</p>
-        </div>
+    /* Parallax background adjustments */
+    .solutions {
+      background-image: url(assets/img/Our\ company\ 1.webp);
+      min-height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-        
-          
-        </div>
+    .why-us {
+      background-image: url(assets/img/Our\ company\ 1.webp);
+      min-height: 350px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section class="call-to-action">
-      <div class="container">
-        
-        <div class="text-center">
-          
-        <div class="section-title">
-          <h2 style="color: #fff;">Our approach</h2>
-        </div>
-
-          <p>POINT's approach focuses on enhancing patient care through innovative prosthetics and orthotics solutions that adapt to evolving healthcare needs. We achieve this through our comprehensive Three Phase Process, ensuring tailored and effective solutions for our clients.</p>
-
-<div class="container-fluid">
-  <div class="col-md-12">
-      <div class="row main">
-          <div class="wrap wrap--3 col-md-3">
-            <h6 style="color: #fff; text-align: right;">01. Meet patients </h6>
-              <div class="container container--3 ">
-                  <p>meet patients to determine their desired products, resourcing, and timeframes for a Project Implementation
-                    Phase</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3  col-md-3">
-              <h6 style="color: #fff; text-align: right;">02.Implementation Phase</h6>
-              <div class="container container--3 ">
-		<p>Delivering the tasks necessary and call the patients to get their initial feedback to allow our team to continue the creativity.
-These tasks will be mutually agreed and detailed in the Meet Patients Phase</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3 col-md-3">
-              <h6 style="color: #fff; text-align: right;">03. Submssion and Maintenance Phase</h6>
-              <div class="container container--3 ">
-                <p>
-                  Submit final product to the patient as well as pure support and
-            maintenance.</p>
-            
-              </div>
-            </div>
-          
-      </div>
-  </div>
-</div>
-        </div>
-      </div>
-    </section><!-- End Call To Action Section -->
-
-    
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-
-    <section id="faq" class="solutions">
-      <div class="wrapper">
-        <h1>Case Studies</h1>
-        <ul class="panels">
-          <div class="row">
-          <li class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                A leading pediatric rehabilitation center in the GCC region faced challenges in providing customized prosthetic solutions for children with varying growth patterns and unique needs. 
-                Standard prosthetics were not adequately addressing the specific requirements of their young patients, leading to discomfort and limited mobility.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-              <h6>Solution</h6>
-            <p>
-                POINT developed a tailored line of pediatric prosthetics using advanced materials and innovative design techniques. 
-                The solutions were adjustable to accommodate growth, ensuring long-term usability and comfort. 
-                POINT also provided ongoing support and adjustments as needed, in collaboration with the rehabilitation center’s medical team.
-            </p>
-            </div>
-          </li>
-          <li class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                Large hospitals in the GCC region are facing inefficiencies in the fitting and customization process of prosthetics for their patients. 
-                The traditional methods were time-consuming, often requiring multiple fittings and adjustments, which delayed patient recovery and increased costs.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-              <h6>Solution</h6>
-              <p>
-                POINT introduced a digital workflow that included 3D scanning and printing technologies, allowing for precise and rapid customization of prosthetic devices. 
-                The process was streamlined from assessment to delivery, reducing the need for multiple physical fittings and allowing for quicker adjustments.
-              </p>
-            </div>
-          </li>
-          <li  class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                A growing healthcare provider in the GCC region wanted to differentiate itself in the competitive market by offering state-of-the-art prosthetic solutions that would attract a larger patient base and new investors. 
-                However, they lacked the expertise to implement such advanced technologies on their own.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-            <h6>Solution</h6>
-              <p>POINT is offering partnership with the healthcare providers to introduce a range of innovative prosthetics, including smart prosthetics equipped with sensor technology for enhanced functionality and user experience. 
-                POINT also provide comprehensive training for the provider’s staff, ensuring successful implementation and ongoing support.
-                insurer.</p>
-          </div>
-          </li>
-         
-        </div>
-        
-         
-        </ul>
-      </div>
-    </section>
-<!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Our Team Section ======= -->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #203954;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .frame {
-            background-color: #203954; /* Darker navy blue color */
-            color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 30%;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .frame:hover {
-            transform: translateY(-30px);
-        }
-
-        img {
-            width: 80%;
-            height: auto;
-            border-radius: 50%;
-            border: 3px solid #ffff;
-        }
-
-        .title {
-            font-size: 1.5em;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        .description {
-            margin-top: 10px;
-            font-size: 1em;
-            color: #cfd8dc;
-        }
-    </style>
+  </style>
 </head>
 <body>
-
-    <h1>Our Team</h1>
-
-    <div class="container">
-        <div class="frame">
-            <img src="image1.png" alt="Team Member 1">
-            <div class="title">Eng. ALI ALSHEHRI</div>
-            <div class="title">FOUNDER-CEO</div>
-            <div class="description">Eng. Ali Alshehri, the founder of POINT Medical Company, holds a bachelor’s degree in engineering from Akron University in Akron, Ohio, USA. His academic background and expertise have been instrumental in leading POINT Medical to the forefront of personalized prosthetics and orthotics in the GCC region. Eng. Alshehri’s vision and commitment to innovation continue to drive the company's success in enhancing patient care through advanced technologies.</div>
-        </div>
-
-        <div class="frame">
-            <img src="image2.png" alt="Team Member 2">
-            <div class="title">Eng. MOHAMMED ALQAHTANI</div>
-            <div class="title">CO-FOUNDER COO</div>
-            <div class="description"> Eng. Mohammed Alqahtani, the co-founder of POINT Medical Company, graduated with a bachelor’s degree in engineering from Akron University in Akron, Ohio, USA. His engineering expertise and collaborative vision with Eng. Ali Alshehri have been crucial in establishing POINT Medical as a leader in personalized prosthetics and orthotics in the GCC region. Engineer Alqahtani’s dedication to innovation and excellence continues to shape the company’s advancements in patient care.</div>
-        </div>
-
-        <div class="frame">
-            <img src="image3.png" alt="Team Member 3">
-            <div class="title">Eng. MOHAMMED ALMUSAITEER</div>
-            <div class="title">CFO</div>
-            <div class="description">Eng. Mohammed Almusaiteer, the Chief Financial Officer (CFO) of POINT Medical Company, graduated with a degree in Chemical Engineering from the University of Akron in Akron, Ohio, USA. With his engineering background and financial acumen, Eng. Almusaiteer plays a pivotal role in managing POINT Medical’s financial strategy and operations. His expertise helps drive the company’s growth and ensures sound financial management, contributing to its leadership in the personalized prosthetics and orthotics sector in the GCC region.</div>
-        </div>
-    </div>
-
-</body>
-</html>
-
-    <section id="team" class="team">
-      <div class="container" style="text-align: center;">
-      <div class="section-title">
-        <h2>3D Scanning and Modeling and Smart Prosthetics with Sensor Technology</h2>
-      </div>
-
-        <p>POINT utilizes cutting-edge technologies to deliver advanced prosthetics and orthotics solutions. 
-            Our scalable, user-friendly approach ensures the highest value in patient care, whether hosted on-premises or in the cloud. 
-            Adhering to industry standards, POINT guarantees that all data is secure and compliant with relevant legislation, providing peace of mind to our clients.</p>
-          <p>The client can be rest assured that the product is reliable and secure for heavy duty usage.
-            </p>
-          <!-- <div> This div will not show <div class="col-md-8 offset-md-2">
-          <img src="assets/img/quarkus_logo_vertical_rgb_1280px_default.png" class="rounded" width="100"  height="100" alt="...">
-          <img src="assets/img/java-logo-1.png" class="rounded " width="100"  height="100" alt="...">
-          <img src="assets/img/1561951216183.png" class="rounded " width="100"  height="100" alt="...">
-          <img src="assets/img/thumbnail-139148.png" class="rounded " width="100"  height="100" alt="...">
-        </div></div> -->
-       
-      </div>
-    </section><!-- End Our Team Section -->
-
-    <section id="" class="why-us" style="color: #fff;">
-      <div class="container" style="text-align: center;">
-        <div class="section-title">
-          <h2 style=" color: #fff;">Why Us</h2>
-        </div>
-          <p>Enhance human well-being through excellence in medical manufacturing, revolutionizing
-            healthcare with advanced prosthetics and orthopedics. Committed to precision, innovation,
-            and compassionate care.</p>
-  <div class="text-center"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here to request for Demo</button></div>
- 
-  <div class="collapse" id="collapseExample">
-    <div class="col-lg-5 col-md-12">
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-        <div class="form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-          <div class="validate"></div>
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-          <div class="validate"></div>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please tell us why you need a demo" placeholder="Message"></textarea>
-          <div class="validate"></div>
-        </div>
-        <div class="text-center"><button class="btn btn-info" type="submit">Send Request</button></div>
-      </form>
-    </div>
-  </div>
-      </div>
-    </section>
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-about">
-              <h3>Point-Medical</h3>
-              <p>Delivering relevant technologies in prosthetics and orthopedics </p>
-              <div class="social-links">
-                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info">
-              <div>
-                <i class="icofont-google-map"></i>
-                <p>Riyadh, Saudi Arabia</p>
-              </div>
-
-              <div>
-                <i class="icofont-envelope"></i>
-                <p>Info@point-medical.com </p>
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Us Section -->
-   
-    <!-- ======= Map Section ======= -->
-    <!-- <div> This div will not show<section class="image">
-      <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-      src= img src="assets/img/maps.png" class="rounded" width="100"  height="100" alt="..."><!-- End Map Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Point-Medical</span></strong>. All Rights Reserved
-      </div>
+    <!DOCTYPE html>
+    <html lang="en">
       
+    
+    <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+      <title>POINT-MEDICAL</title>
+      <link rel="icon" type="image/x-icon" href="assets/img/Point_Medical_Logo.png">
+      <meta name="author" content="Velile Vamba">
+      <meta content="" name="lorem100">
+      <meta content="" name="keywords">
+    
+      <!-- Favicons -->
+      
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+    
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+      <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+      <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    
+      <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
+    
+      <!-- Template Main CSS File -->
+      <link href="assets/css/style.css" rel="stylesheet">
+        <style type="text/css">
+            .carousel-item {
+              height: 60vh;
+              min-height: 350px;
+              background: no-repeat center center scroll;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+    
+        .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .main .wrap {
+      margin: 2rem;
+    
+      transform-style: preserve-3d;
+      transform: perspective(100rem);
+    
+      cursor: pointer;
+    }
+    
+    .main .container {
+      --rX: 0;
+      --rY: 0;
+      --bX: 50%;
+      --bY: 80%;
+    
+     
+      border: 1px solid var(--background-color);
+      border-radius: 1.6rem;
+      padding: 4rem;
+    
+      display: flex;
+      align-items: flex-end;
+    
+      position: relative;
+      transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+    
+      background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(32, 57, 84));
+      background-position: var(--bX) var(--bY);
+      background-size: 40rem auto;
+      box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
+    
+      transition: transform .6s 1s;
+    }
+    
+    .main .container::before,
+    .main .container::after {
+      content: "";
+    
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid #fff;
+    
+      position: absolute;
+      z-index: 2;
+    
+      opacity: .6;
+      transition: .3s;
+    }
+    
+    .main .container::before {
+      top: 2rem;
+      right: 2rem;
+    
+      border-bottom-width: 0;
+      border-left-width: 0;
+    }
+    
+    .main .container::after {
+      bottom: 2rem;
+      left: 2rem;
+    
+      border-top-width: 0;
+      border-right-width: 0;
+    }
+    
+    .main .container--active {
+      transition: none;
+    }
+    
+    .main .container--2 {
+      filter: hue-rotate(80deg) saturate(140%);
+    }
+    
+    .main .container--3 {
+      filter: hue-rotate(160deg) saturate(140%);
+    }
+    
+    .main .container p {
+      color: hsla(0, 0%, 100%, .6);
+      font-size: 0.8rem;
+      text-align: left;
+    }
+    
+    .main .wrap:hover .container::before,
+    .main .wrap:hover .container::after {
+      width: calc(100% - 4rem);
+      height: calc(100% - 4rem);
+    }
+    
+    .main .abs-site-link {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      color: hsla(0, 0%, 0%);
+      font-size: 1.6rem;
+    } 
+    
+    /*****************************************/
+    .solutions {
+      /* The image used */
+      background-image: url(assets/img/Our\ company\ 1.webp);
+    
+      /* Set a specific height */
+      min-height: 500px;
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .solutions .wrapper{
+      width: 100%;
+      max-width: 100%;
+      margin: auto;
+    }
+    
+    .solutions h1{
+      color: #fff;
+      font-weight: normal;
+      text-align: center;
+      font-size: 48px;
+    }
+    
+    .solutions .panels{
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .solutions .panels li{
+    
+      margin: 0;
+      display: block;
+      box-sizing: border-box;
+      float: left;
+    }
+    
+    .solutions .panels li div{
+      padding: 10% 0;
+      text-align: center;
+      color: #fff;
+      font-size: 11px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      height: 50vh;
+    }
+    
+    /*// ANIMATION STYLES //*/
+    
+    .solutions .panels div.back {
+      transform: rotateY(90deg);
+    }
+    
+    .solutions .panels div.front {
+      position: absolute;
+    }
+    
+    .solutions .panels li:hover div.front {
+      animation: twirl 0.2s ease-in forwards;
+    }
+    .solutions .panels li:hover div.back {
+      animation: twirl 0.2s 0.2s ease-out forwards reverse;
+    }
+    
+    @keyframes twirl {
+      0%{ transform: rotateY(0deg)}
+      100% {transform: rotateY(90deg)}
+    }
+    
+    .why-us {
+      /* The image used */
+      background-image: url(assets/img/Our\ company\ 1.webp);
+    
+      /* Set a specific height */
+      min-height: 350px;
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+        </style>
+    </head>
+    
+    <body>
+    
+      <header id="header" class="fixed-top">
+        <div class="container">
+    
+          <div class="logo float-left">
+            
+            <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
+            <a href="/"><img src="assets/img/Point_Medical_Logo.png" alt="" class="img-fluid"></a>
+          </div>
+    
+          <nav class="nav-menu float-right d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="#header">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Our Work</a></li>
+              <li><a href="#faq">Case Studies</a></li>
+              <li><a href="#team">Solutions</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+            </ul>
+                
+          </nav><!-- .nav-menu -->
+    
+        </div>
+      </header><!-- End #header -->
+    
+      <!-- ======= Hero Section ======= -->
+      <section >
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url(assets/img/Realclinic.webp)">
+              <div class="carousel-caption">
+                <h2 class="display-4" ></h2>
+                <p class="lead"style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;" >POINT leads in personalized prosthetics and orthotics in the GCC region, enhancing rehabilitation outcomes through innovative, tailored solutions. We empower healthcare providers and transform patient care with cutting-edge technology and personalized support.</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url(assets/img/slider-2.jpg)">
+              <div class="carousel-caption ">
+                <h2 class="display-4">Point-Medical</h2>
+                <p class="lead">Delivering Prosthetics, Orthotics, and Cutting-Edge Technologies to the Market</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url(assets/img/exersice.jpg)">
+              <div class="carousel-caption covid-block">
+                <h2 class="display-4">We are in this together.</h2>
+                <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 10px;">POINT is committed to adhering to the standards set by the WHO for prosthetics and orthotics. Our company strictly follows these guidelines, ensuring the highest quality in our products and services. We prioritize the well-being of our patients and partners by maintaining compliance with international health standards, fostering safe and effective rehabilitation solutions.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+      </section><!-- #hero -->
+      
+    
+      <main id="main">
+    
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+          <div class="container">
+    
+            <div class="section-title">
+              <h3>About Us</h3
+              >
+            </div>
+    
+            <div class="row">
+              <div class="col-lg-6 order-1 order-lg-2">
+                <img src="assets/img/Point_Medical_Logo.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+                <h3>What we do</h3>
+                <p class="">
+                    POINT specializes in prosthetics and orthotics solutions, helping healthcare providers enhance patient care and drive innovation through advanced technology and personalized support.
+                </p>
+                <p>
+                    POINT focuses on delivering innovative, personalized prosthetics and orthotics solutions across the GCC region. Our services provide healthcare providers, rehabilitation centers, and patients with advanced, customized options that enhance care and outcomes, all while maintaining cost-efficiency.
+                </p>
+                <p>
+                    At POINT, our goal is not to be the largest provider in the prosthetics and orthotics field, but to be the best in delivering personalized, high-quality solutions tailored to the specific needs of our clients.
+                </p>
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End About Us Section -->
+    
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Our Work</h2>
+              <p>POINT focuses on providing advanced prosthetics and orthotics solutions to healthcare providers. Our aim is to enhance patient outcomes while streamlining the process for healthcare professionals. We are dedicated to delivering high-quality, personalized solutions that improve efficiency and effectiveness in patient care.</p>
+            </div>
+    
+            
+              
+            </div>
+    
+          </div>
+        </section><!-- End Services Section -->
+    
+        <!-- ======= Call To Action Section ======= -->
+        <section class="call-to-action">
+          <div class="container">
+            
+            <div class="text-center">
+              
+            <div class="section-title">
+              <h2 style="color: #fff;">Our approach</h2>
+            </div>
+    
+              <p>POINT's approach focuses on enhancing patient care through innovative prosthetics and orthotics solutions that adapt to evolving healthcare needs. We achieve this through our comprehensive Three Phase Process, ensuring tailored and effective solutions for our clients.</p>
+    
+    <div class="container-fluid">
+      <div class="col-md-12">
+          <div class="row main">
+              <div class="wrap wrap--3 col-md-3">
+                <h6 style="color: #fff; text-align: right;">01. Meet patients </h6>
+                  <div class="container container--3 ">
+                      <p>meet patients to determine their desired products, resourcing, and timeframes for a Project Implementation
+                        Phase</p>
+                  </div>
+                </div>
+              
+                <div class="wrap wrap--3  col-md-3">
+                  <h6 style="color: #fff; text-align: right;">02.Implementation Phase</h6>
+                  <div class="container container--3 ">
+            <p>Delivering the tasks necessary and call the patients to get their initial feedback to allow our team to continue the creativity.
+    These tasks will be mutually agreed and detailed in the Meet Patients Phase</p>
+                  </div>
+                </div>
+              
+                <div class="wrap wrap--3 col-md-3">
+                  <h6 style="color: #fff; text-align: right;">03. Submssion and Maintenance Phase</h6>
+                  <div class="container container--3 ">
+                    <p>
+                      Submit final product to the patient as well as pure support and
+                maintenance.</p>
+                
+                  </div>
+                </div>
+              
+          </div>
+      </div>
     </div>
-  </footer><!-- End #footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+            </div>
+          </div>
+        </section><!-- End Call To Action Section -->
+    
+        
+    
+        <!-- ======= Frequently Asked Questions Section ======= -->
+    
+        <section id="faq" class="solutions">
+          <div class="wrapper">
+            <h1>Case Studies</h1>
+            <ul class="panels">
+              <div class="row">
+              <li class="col-md-4">
+                <div class="front" style="background: #203954">
+                  <h6>Problem</h6>
+                  <p>
+                    A leading pediatric rehabilitation center in the GCC region faced challenges in providing customized prosthetic solutions for children with varying growth patterns and unique needs. 
+                    Standard prosthetics were not adequately addressing the specific requirements of their young patients, leading to discomfort and limited mobility.
+                  </p>
+                </div>
+                <div class="back" style="background: #020a20">
+                  <h6>Solution</h6>
+                <p>
+                    POINT developed a tailored line of pediatric prosthetics using advanced materials and innovative design techniques. 
+                    The solutions were adjustable to accommodate growth, ensuring long-term usability and comfort. 
+                    POINT also provided ongoing support and adjustments as needed, in collaboration with the rehabilitation center’s medical team.
+                </p>
+                </div>
+              </li>
+              <li class="col-md-4">
+                <div class="front" style="background: #203954">
+                  <h6>Problem</h6>
+                  <p>
+                    Large hospitals in the GCC region are facing inefficiencies in the fitting and customization process of prosthetics for their patients. 
+                    The traditional methods were time-consuming, often requiring multiple fittings and adjustments, which delayed patient recovery and increased costs.
+                  </p>
+                </div>
+                <div class="back" style="background: #020a20">
+                  <h6>Solution</h6>
+                  <p>
+                    POINT introduced a digital workflow that included 3D scanning and printing technologies, allowing for precise and rapid customization of prosthetic devices. 
+                    The process was streamlined from assessment to delivery, reducing the need for multiple physical fittings and allowing for quicker adjustments.
+                  </p>
+                </div>
+              </li>
+              <li  class="col-md-4">
+                <div class="front" style="background: #203954">
+                  <h6>Problem</h6>
+                  <p>
+                    A growing healthcare provider in the GCC region wanted to differentiate itself in the competitive market by offering state-of-the-art prosthetic solutions that would attract a larger patient base and new investors. 
+                    However, they lacked the expertise to implement such advanced technologies on their own.
+                  </p>
+                </div>
+                <div class="back" style="background: #020a20">
+                <h6>Solution</h6>
+                  <p>POINT is offering partnership with the healthcare providers to introduce a range of innovative prosthetics, including smart prosthetics equipped with sensor technology for enhanced functionality and user experience. 
+                    POINT also provide comprehensive training for the provider’s staff, ensuring successful implementation and ongoing support.
+                    insurer.</p>
+              </div>
+              </li>
+             
+            </div>
+            
+             
+            </ul>
+          </div>
+        </section>
+    <!-- End Frequently Asked Questions Section -->
+    
+        <!-- ======= Our Team Section ======= -->
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Team</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+    
+            h1 {
+                font-size: 3em;
+                color: #203954;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+    
+            .container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+    
+            .frame {
+                background-color: #203954; /* Darker navy blue color */
+                color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                width: 30%;
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.2s ease-in-out;
+            }
+    
+            .frame:hover {
+                transform: translateY(-30px);
+            }
+    
+            img {
+                width: 80%;
+                height: auto;
+                border-radius: 50%;
+                border: 3px solid #ffff;
+            }
+    
+            .title {
+                font-size: 1.5em;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+    
+            .description {
+                margin-top: 10px;
+                font-size: 1em;
+                color: #cfd8dc;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Our Team</h1>
+    
+        <div class="container">
+            <div class="frame">
+                <img src="image1.png" alt="Team Member 1">
+                <div class="title">Eng. ALI ALSHEHRI</div>
+                <div class="title">FOUNDER-CEO</div>
+                <div class="description">Eng. Ali Alshehri, the founder of POINT Medical Company, holds a bachelor’s degree in engineering from Akron University in Akron, Ohio, USA. His academic background and expertise have been instrumental in leading POINT Medical to the forefront of personalized prosthetics and orthotics in the GCC region. Eng. Alshehri’s vision and commitment to innovation continue to drive the company's success in enhancing patient care through advanced technologies.</div>
+            </div>
+    
+            <div class="frame">
+                <img src="image2.png" alt="Team Member 2">
+                <div class="title">Eng. MOHAMMED ALQAHTANI</div>
+                <div class="title">CO-FOUNDER COO</div>
+                <div class="description"> Eng. Mohammed Alqahtani, the co-founder of POINT Medical Company, graduated with a bachelor’s degree in engineering from Akron University in Akron, Ohio, USA. His engineering expertise and collaborative vision with Eng. Ali Alshehri have been crucial in establishing POINT Medical as a leader in personalized prosthetics and orthotics in the GCC region. Engineer Alqahtani’s dedication to innovation and excellence continues to shape the company’s advancements in patient care.</div>
+            </div>
+    
+            <div class="frame">
+                <img src="image3.png" alt="Team Member 3">
+                <div class="title">Eng. MOHAMMED ALMUSAITEER</div>
+                <div class="title">CFO</div>
+                <div class="description">Eng. Mohammed Almusaiteer, the Chief Financial Officer (CFO) of POINT Medical Company, graduated with a degree in Chemical Engineering from the University of Akron in Akron, Ohio, USA. With his engineering background and financial acumen, Eng. Almusaiteer plays a pivotal role in managing POINT Medical’s financial strategy and operations. His expertise helps drive the company’s growth and ensures sound financial management, contributing to its leadership in the personalized prosthetics and orthotics sector in the GCC region.</div>
+            </div>
+        </div>
+    
+    </body>
+    </html>
+    
+        <section id="team" class="team">
+          <div class="container" style="text-align: center;">
+          <div class="section-title">
+            <h2>3D Scanning and Modeling and Smart Prosthetics with Sensor Technology</h2>
+          </div>
+    
+            <p>POINT utilizes cutting-edge technologies to deliver advanced prosthetics and orthotics solutions. 
+                Our scalable, user-friendly approach ensures the highest value in patient care, whether hosted on-premises or in the cloud. 
+                Adhering to industry standards, POINT guarantees that all data is secure and compliant with relevant legislation, providing peace of mind to our clients.</p>
+              <p>The client can be rest assured that the product is reliable and secure for heavy duty usage.
+                </p>
+              <!-- <div> This div will not show <div class="col-md-8 offset-md-2">
+              <img src="assets/img/quarkus_logo_vertical_rgb_1280px_default.png" class="rounded" width="100"  height="100" alt="...">
+              <img src="assets/img/java-logo-1.png" class="rounded " width="100"  height="100" alt="...">
+              <img src="assets/img/1561951216183.png" class="rounded " width="100"  height="100" alt="...">
+              <img src="assets/img/thumbnail-139148.png" class="rounded " width="100"  height="100" alt="...">
+            </div></div> -->
+           
+          </div>
+        </section><!-- End Our Team Section -->
+    
+        <section id="" class="why-us" style="color: #fff;">
+          <div class="container" style="text-align: center;">
+            <div class="section-title">
+              <h2 style=" color: #fff;">Why Us</h2>
+            </div>
+              <p>Enhance human well-being through excellence in medical manufacturing, revolutionizing
+                healthcare with advanced prosthetics and orthopedics. Committed to precision, innovation,
+                and compassionate care.</p>
+      <div class="text-center"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here to request for Demo</button></div>
+     
+      <div class="collapse" id="collapseExample">
+        <div class="col-lg-5 col-md-12">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please tell us why you need a demo" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="text-center"><button class="btn btn-info" type="submit">Send Request</button></div>
+          </form>
+        </div>
+      </div>
+          </div>
+        </section>
+    
+        <!-- ======= Contact Us Section ======= -->
+        <section id="contact" class="contact section-bg">
+          <div class="container">
+    
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6">
+                <div class="contact-about">
+                  <h3>Point-Medical</h3>
+                  <p>Delivering relevant technologies in prosthetics and orthopedics </p>
+                  <div class="social-links">
+                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="info">
+                  <div>
+                    <i class="icofont-google-map"></i>
+                    <p>Riyadh, Saudi Arabia</p>
+                  </div>
+    
+                  <div>
+                    <i class="icofont-envelope"></i>
+                    <p>Info@point-medical.com </p>
+                  </div>
+    
+    
+                </div>
+              </div>
+    
+              <div class="col-lg-5 col-md-12">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section><!-- End Contact Us Section -->
+       
+        <!-- ======= Map Section ======= -->
+        <!-- <div> This div will not show<section class="image">
+          <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+          src= img src="assets/img/maps.png" class="rounded" width="100"  height="100" alt="..."><!-- End Map Section -->
+    
+      </main><!-- End #main -->
+    
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Point-Medical</span></strong>. All Rights Reserved
+          </div>
+          
+        </div>
+      </footer><!-- End #footer -->
+    
+      <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/venobox/venobox.min.js"></script>
+    
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+    
+    </body>
+    
+    </html>
 </body>
-
 </html>
